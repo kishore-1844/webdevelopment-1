@@ -1,0 +1,21 @@
+<!-- CSS 19: CSS inheritance, specificity, and the cascade -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Cascade</title>
+  <style>
+    body { color: #111827; font-family: Arial, sans-serif; }
+    .parent { color: blue; }
+    .child { color: red; }
+    p { color: green; }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    Parent text
+    <p class="child">Child text inherits and overrides specificity.</p>
+  </div>
+</body>
+</html>

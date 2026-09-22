@@ -1,0 +1,32 @@
+<!-- CSS 12: CSS box-sizing property with content-box and border-box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Sizing</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .content-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #ef4444;
+      box-sizing: content-box;
+      background: #fee2e2;
+      margin-bottom: 20px;
+    }
+
+    .border-box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #3b82f6;
+      box-sizing: border-box;
+      background: #dbeafe;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">content-box</div>
+  <div class="border-box">border-box</div>
+</body>
+</html>

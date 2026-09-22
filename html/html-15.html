@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan | Portfolio</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 900px; margin: 0 auto; padding: 24px; color: #172033; background: #f6f3ee; }
+    header { padding: 48px 0; border-bottom: 3px solid #d97706; }
+    nav a { margin-right: 18px; color: #9a3412; }
+    section { padding: 28px 0; border-bottom: 1px solid #d6d3d1; }
+    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .project { padding: 18px; background: white; border: 1px solid #e7e5e4; }
+    footer { padding: 24px 0; }
+    @media (max-width: 650px) { .projects { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header><nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav><h1>Alex Morgan</h1><p>Front-end developer building clear, useful digital experiences.</p></header>
+  <main>
+    <section id="about"><h2>About Me</h2><p>I enjoy turning thoughtful ideas into accessible interfaces with HTML, CSS, and JavaScript.</p></section>
+    <section id="projects"><h2>Selected Projects</h2><div class="projects"><article class="project"><h3>Campus Hub</h3><p>A simple student dashboard for schedules and announcements.</p></article><article class="project"><h3>Green Market</h3><p>A responsive storefront for local makers.</p></article><article class="project"><h3>Study Notes</h3><p>A focused notes page with a calm reading experience.</p></article></div></section>
+  </main>
+  <footer id="contact"><strong>Let's work together.</strong><br>alex.morgan@example.com</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- CSS 20: CSS calc(), min(), max(), and clamp() functions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Functions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .calc-box {
+      width: calc(50% - 30px);
+      min-width: 200px;
+      max-width: 500px;
+      background: #e0f2fe;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .clamp-box {
+      width: clamp(200px, 50vw, 600px);
+      background: #fef3c7;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="calc-box">Using calc() and min/max.</div>
+  <div class="clamp-box">Using clamp() for responsive width.</div>
+</body>
+</html>

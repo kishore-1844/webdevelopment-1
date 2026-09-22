@@ -1,0 +1,56 @@
+<!-- CSS Foundations & Core UI - Create a webpage using Inline, Internal, and External CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Fundamentals</title>
+  <link rel="stylesheet" href="css-01-external.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 30px;
+      color: #111827;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      color: #1d4ed8;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .box {
+      background: #dbeafe;
+      border: 2px solid #2563eb;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Fundamentals</h1>
+    <p style="color: #dc2626; font-weight: bold;">This paragraph uses inline CSS.</p>
+    <p>This paragraph uses internal CSS styling.</p>
+    <p class="external-style">This paragraph uses external CSS styling.</p>
+    <div class="box">
+      This content is styled using an internal CSS class and demonstrates a card-like section.
+    </div>
+  </div>
+</body>
+</html>

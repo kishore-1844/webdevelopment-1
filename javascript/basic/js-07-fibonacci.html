@@ -1,0 +1,22 @@
+<!-- JavaScript 7: Generate the Fibonacci series. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fibonacci</title>
+</head>
+<body>
+  <script>
+    let n = 10, a = 0, b = 1;
+    let series = "";
+    for (let i = 0; i < n; i++) {
+      series += a + " ";
+      let next = a + b;
+      a = b;
+      b = next;
+    }
+    document.write(series);
+  </script>
+</body>
+</html>

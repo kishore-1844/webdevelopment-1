@@ -1,0 +1,82 @@
+<!-- CSS 38: Simple personal portfolio webpage using HTML and CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+    }
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #0f172a);
+      color: white;
+      padding: 20px 0;
+    }
+    nav { display: flex; justify-content: space-between; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      padding: 60px 0;
+      align-items: center;
+    }
+    h1 { font-size: 3rem; }
+    .profile {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .skills span {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    footer { background: #111827; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div><strong>MyPortfolio</strong></div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div>
+      <h1>Hello, I'm Alex</h1>
+      <p>I create clean and responsive websites with modern design and solid HTML/CSS skills.</p>
+      <div class="skills" id="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+      </div>
+    </div>
+    <img class="profile" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Portfolio profile" />
+  </main>
+
+  <section class="container" id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate frontend developer focused on building elegant user experiences and accessible interfaces.</p>
+  </section>
+
+  <footer id="contact">Contact: alex@example.com | +91 9876543210</footer>
+</body>
+</html>

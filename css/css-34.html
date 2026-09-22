@@ -1,0 +1,27 @@
+<!-- CSS 34: CSS keyframe animations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keyframe Animation</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 50px; }
+    .box {
+      width: 150px;
+      height: 150px;
+      background: #ef4444;
+      border-radius: 12px;
+      animation: moveBox 2s infinite alternate;
+    }
+
+    @keyframes moveBox {
+      from { transform: translateX(0) scale(1); background: #ef4444; }
+      to { transform: translateX(200px) scale(1.2); background: #22c55e; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

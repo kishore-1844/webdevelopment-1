@@ -1,0 +1,19 @@
+<!-- HTML 13: Responsive webpage using CSS media queries -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #172033; }
+    .layout { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+    aside { padding: 24px; background: #164e63; color: white; }
+    main { padding: 32px; background: #ecfeff; }
+    @media (max-width: 650px) { .layout { grid-template-columns: 1fr; } aside { padding: 16px; } main { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="layout"><aside><h1>Study Space</h1><p>Resize the page to see the layout adapt.</p></aside><main><h2>Responsive Content</h2><p>This main area moves below the sidebar on smaller screens.</p></main></div>
+</body>
+</html>

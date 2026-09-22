@@ -1,0 +1,24 @@
+<!-- CSS 3: Webpage using Descendant, Child, Adjacent Sibling, and General Sibling selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Combinators</title>
+  <style>
+    .container p { color: purple; }
+    .container > p { font-weight: bold; }
+    h2 + p { color: brown; }
+    h3 ~ p { background: #fef3c7; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Heading</h2>
+    <p>Adjacent sibling selector example.</p>
+    <p>General sibling example.</p>
+  </div>
+  <h3>Another heading</h3>
+  <p>Sibling paragraph.</p>
+</body>
+</html>

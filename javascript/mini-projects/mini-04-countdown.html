@@ -1,0 +1,1 @@
+<!doctype html><html><head><meta charset="UTF-8"><title>Countdown</title><link rel="stylesheet" href="../dom-lab.css"></head><body><main><h1>Countdown Timer</h1><div id="time" class="output">10</div><button onclick="start()">Start</button></main><script>let n=10;function start(){const t=setInterval(()=>{time.textContent=--n;if(n<=0)clearInterval(t)},1000)}</script></body></html>

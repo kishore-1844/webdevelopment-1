@@ -1,0 +1,35 @@
+<!-- CSS 18: CSS variables and custom properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Variables</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #f97316;
+      --bg: #eff6ff;
+    }
+
+    body { font-family: Arial, sans-serif; background: var(--bg); padding: 30px; }
+    .box {
+      background: var(--primary);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .btn {
+      background: var(--secondary);
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">This uses CSS variables.</div><br />
+  <button class="btn">Button</button>
+</body>
+</html>

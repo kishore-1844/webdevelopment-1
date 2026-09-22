@@ -1,0 +1,36 @@
+<!-- CSS 13: CSS display properties such as block, inline, inline-block, flex, grid, and none -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Properties</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .block { display: block; background: #dbeafe; padding: 10px; margin-bottom: 10px; }
+    .inline { display: inline; background: #dcfce7; padding: 5px; }
+    .inline-block { display: inline-block; background: #fef3c7; padding: 10px; margin-right: 10px; }
+    .none { display: none; }
+    .flexbox { display: flex; gap: 10px; margin-top: 20px; }
+    .flexbox div { background: #e0e7ff; padding: 10px; }
+    .gridbox { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
+    .gridbox div { background: #fce7f3; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="block">Block element</div>
+  <span class="inline">Inline</span>
+  <span class="inline-block">Inline-block</span>
+  <div class="none">Hidden element</div>
+
+  <div class="flexbox">
+    <div>Flex 1</div>
+    <div>Flex 2</div>
+  </div>
+
+  <div class="gridbox">
+    <div>Grid 1</div>
+    <div>Grid 2</div>
+  </div>
+</body>
+</html>
